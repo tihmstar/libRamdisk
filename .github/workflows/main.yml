@@ -101,7 +101,7 @@ jobs:
           make -j || make
         fi
     - name: make install
-      run: make install
+      run: make DESTDIR=$GITHUB_WORKSPACE/$BUILDROOT install
     - uses: actions/upload-artifact@v4
       with:
         name: ${{ env.BUILDROOT }}
