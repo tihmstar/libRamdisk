@@ -11,6 +11,7 @@
 #include <libgeneral/Mem.hpp>
 
 #include <vector>
+#include <memory>
 
 #include <stdlib.h>
 
