@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8765D74130AC247000D2ECF0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8765D73F30AC247000D2ECF0 /* main.cpp */; };
+		8765D74730AC251400D2ECF0 /* libgeneral.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8765D74630AC251400D2ECF0 /* libgeneral.0.dylib */; };
+		8765D74830AC251400D2ECF0 /* libgeneral.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 8765D74630AC251400D2ECF0 /* libgeneral.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		8765D74F30AC26AD00D2ECF0 /* Ramdisk_libdmg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8765D74E30AC26AD00D2ECF0 /* Ramdisk_libdmg.cpp */; };
+		8765D75130AC285800D2ECF0 /* libcommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8765D75030AC285000D2ECF0 /* libcommon.a */; };
+		8765D75330AC286800D2ECF0 /* libdmg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8765D75230AC286200D2ECF0 /* libdmg.a */; };
+		8765D75530AC287500D2ECF0 /* libhfs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8765D75430AC287000D2ECF0 /* libhfs.a */; };
+		8765D75730AC288A00D2ECF0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8765D75630AC288400D2ECF0 /* libz.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8765D73330AC246800D2ECF0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		8765D74930AC251400D2ECF0 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8765D74830AC251400D2ECF0 /* libgeneral.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8765D73530AC246800D2ECF0 /* libRamdisk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = libRamdisk; sourceTree = BUILT_PRODUCTS_DIR; };
+		8765D73F30AC247000D2ECF0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8765D74230AC249700D2ECF0 /* Ramdisk.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Ramdisk.hpp; path = ../include/Ramdisk/Ramdisk.hpp; sourceTree = "<group>"; };
+		8765D74630AC251400D2ECF0 /* libgeneral.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgeneral.0.dylib; path = ../../../../usr/local/lib/libgeneral.0.dylib; sourceTree = "<group>"; };
+		8765D74D30AC26AD00D2ECF0 /* Ramdisk_libdmg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Ramdisk_libdmg.hpp; sourceTree = "<group>"; };
+		8765D74E30AC26AD00D2ECF0 /* Ramdisk_libdmg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ramdisk_libdmg.cpp; sourceTree = "<group>"; };
+		8765D75030AC285000D2ECF0 /* libcommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcommon.a; path = ../../../../usr/local/lib/libcommon.a; sourceTree = "<group>"; };
+		8765D75230AC286200D2ECF0 /* libdmg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libdmg.a; path = ../../../../usr/local/lib/libdmg.a; sourceTree = "<group>"; };
+		8765D75430AC287000D2ECF0 /* libhfs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhfs.a; path = ../../../../usr/local/lib/libhfs.a; sourceTree = "<group>"; };
+		8765D75630AC288400D2ECF0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8765D73230AC246800D2ECF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8765D75130AC285800D2ECF0 /* libcommon.a in Frameworks */,
+				8765D75330AC286800D2ECF0 /* libdmg.a in Frameworks */,
+				8765D74730AC251400D2ECF0 /* libgeneral.0.dylib in Frameworks */,
+				8765D75530AC287500D2ECF0 /* libhfs.a in Frameworks */,
+				8765D75730AC288A00D2ECF0 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8765D72C30AC246800D2ECF0 = {
+			isa = PBXGroup;
+			children = (
+				8765D74030AC247000D2ECF0 /* libRamdisk */,
+				8765D74530AC251400D2ECF0 /* Frameworks */,
+				8765D73630AC246800D2ECF0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8765D73630AC246800D2ECF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8765D73530AC246800D2ECF0 /* libRamdisk */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8765D74030AC247000D2ECF0 /* libRamdisk */ = {
+			isa = PBXGroup;
+			children = (
+				8765D74230AC249700D2ECF0 /* Ramdisk.hpp */,
+				8765D74D30AC26AD00D2ECF0 /* Ramdisk_libdmg.hpp */,
+				8765D74E30AC26AD00D2ECF0 /* Ramdisk_libdmg.cpp */,
+				8765D73F30AC247000D2ECF0 /* main.cpp */,
+			);
+			path = libRamdisk;
+			sourceTree = "<group>";
+		};
+		8765D74530AC251400D2ECF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8765D75630AC288400D2ECF0 /* libz.tbd */,
+				8765D75430AC287000D2ECF0 /* libhfs.a */,
+				8765D75230AC286200D2ECF0 /* libdmg.a */,
+				8765D75030AC285000D2ECF0 /* libcommon.a */,
+				8765D74630AC251400D2ECF0 /* libgeneral.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8765D73430AC246800D2ECF0 /* libRamdisk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8765D73C30AC246900D2ECF0 /* Build configuration list for PBXNativeTarget "libRamdisk" */;
+			buildPhases = (
+				8765D73130AC246800D2ECF0 /* Sources */,
+				8765D73230AC246800D2ECF0 /* Frameworks */,
+				8765D73330AC246800D2ECF0 /* CopyFiles */,
+				8765D74930AC251400D2ECF0 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libRamdisk;
+			packageProductDependencies = (
+			);
+			productName = libRamdisk;
+			productReference = 8765D73530AC246800D2ECF0 /* libRamdisk */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8765D72D30AC246800D2ECF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					8765D73430AC246800D2ECF0 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+				};
+			};
+			buildConfigurationList = 8765D73030AC246800D2ECF0 /* Build configuration list for PBXProject "libRamdisk" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8765D72C30AC246800D2ECF0;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8765D73630AC246800D2ECF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8765D73430AC246800D2ECF0 /* libRamdisk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8765D73130AC246800D2ECF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8765D74F30AC26AD00D2ECF0 /* Ramdisk_libdmg.cpp in Sources */,
+				8765D74130AC247000D2ECF0 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8765D73A30AC246900D2ECF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8765D73B30AC246900D2ECF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8765D73D30AC246900D2ECF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8765D73E30AC246900D2ECF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/include",
+					/usr/local/include,
+				);
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8765D73030AC246800D2ECF0 /* Build configuration list for PBXProject "libRamdisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8765D73A30AC246900D2ECF0 /* Debug */,
+				8765D73B30AC246900D2ECF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8765D73C30AC246900D2ECF0 /* Build configuration list for PBXNativeTarget "libRamdisk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8765D73D30AC246900D2ECF0 /* Debug */,
+				8765D73E30AC246900D2ECF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8765D72D30AC246800D2ECF0 /* Project object */;
+}
