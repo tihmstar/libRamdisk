@@ -42,8 +42,8 @@ PKG_CHECK_MODULES(libgeneral, $LIBGENERAL_REQUIRES_STR)
 
 AC_SUBST([libgeneral_requires], [$LIBGENERAL_REQUIRES_STR])
 
-SELF_LIBS="-lcommon -ldmg -lhfs -lz"
-AC_SUBST([self_libs], [$SELF_LIBS])
+PRIVATE_LIBS="-lcommon -ldmg -lhfs -lz"
+AC_SUBST([private_libs], [$PRIVATE_LIBS])
 
 AC_ARG_ENABLE([debug],
             [AS_HELP_STRING([--enable-debug],
@@ -61,7 +61,7 @@ LT_INIT
 
 AC_CHECK_FUNCS([mkdtemp])
 
-LDFLAGS+=" -no-undefined $SELF_LIBS"
+LDFLAGS+=" -no-undefined $PRIVATE_LIBS"
 
 GLOBAL_CFLAGS+=" -fvisibility=hidden"
 case "$GLOBAL_CFLAGS" in

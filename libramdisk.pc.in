@@ -8,5 +8,6 @@ Description: A library for manipulating iOS ramdisks
 
 Requires: @libgeneral_requires@
 Version: @VERSION_COMMIT_COUNT@
-Libs: -L${libdir} -lramdisk @self_libs@
+Libs: -L${libdir} -lramdisk
+Libs.private: @private_libs@
 Cflags: -I${includedir}
