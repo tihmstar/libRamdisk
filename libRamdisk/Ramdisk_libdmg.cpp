@@ -81,7 +81,14 @@ void Ramdisk_libdmg::putFileHFS(const char *path, const void *buf, size_t bufSiz
         }
         safeFree(locbuf);
     });
-    ::removeFile(path, _hfs);
+    bool hasPath = false;
+    try {
+        listFilesAtPath(path);
+        hasPath = true;
+    } catch (...) {
+        //
+    }
+    if (hasPath) ::removeFile(path, _hfs);
     if (_hfs->volumeHeader->freeBlocks < 10 || (_hfs->volumeHeader->freeBlocks-10) * _hfs->volumeHeader->blockSize < bufSize) {
         growRamdisk(bufSize);
     }
@@ -94,8 +101,14 @@ void Ramdisk_libdmg::putFileHFS(const char *path, const void *buf, size_t bufSiz
 }
 
 void Ramdisk_libdmg::rmHFS(const char *path, bool recursive){
-    retassure(!recursive, "recursive removing not implemented!");
-    ::removeFile(path, _hfs);
+    if (recursive) {
+        auto paths = listFilesAtPath(path);
+        for (auto p = paths.rbegin(); p != paths.rend(); ++p){
+            ::removeFile(p->c_str(), _hfs);
+        }
+    }else{
+        ::removeFile(path, _hfs);
+    }
 }
 
 std::vector<std::string> Ramdisk_libdmg::listFilesAtPathHFS(const char *path, bool recursive){
